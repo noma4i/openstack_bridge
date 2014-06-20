@@ -19,6 +19,9 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+  require 'openstack_bridge'
+  require 'httpi'
+  
   swift = OpenstackBridge::Swift.new('localhost', 'lis2', 'password', 'dev', 'container_name')
   swift.exists?('readme.txt')
   swift.read('readme.txt')
